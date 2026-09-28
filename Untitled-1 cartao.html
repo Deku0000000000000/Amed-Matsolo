@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cartão de Visita | Amed Design - Matola</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{ --fundo:#0a0f1a; --primaria:#8a2be2; --secundaria:#00a8ff; --texto:#e0e0e0; --card:#1a1230; }
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Poppins',sans-serif; background:var(--fundo); color:var(--texto);}
+nav{padding:15px 8%; display:flex; justify-content:space-between; border-bottom:1px solid rgba(138,43,226,0.2);}
+nav a{color:var(--texto); text-decoration:none; font-weight:600}
+.hero{padding:60px 8%; max-width:1200px; margin:auto; display:grid; grid-template-columns:1.2fr 0.8fr; gap:40px; align-items:center;}
+.tag{background:var(--secundaria); color:#000; padding:5px 14px; border-radius:20px; font-size:13px; font-weight:700; margin-right:8px; display:inline-block;}
+.btn{display:inline-block; padding:13px 30px; background:var(--primaria); color:white; border-radius:8px; text-decoration:none; font-weight:600; transition:0.3s}
+.btn:hover{transform:translateY(-3px); box-shadow:0 10px 20px rgba(138,43,226,0.4)}
+section{padding:60px 8%; max-width:1100px; margin:auto;}
+.card{background:rgba(26,18,48,0.7); border:1px solid rgba(138,43,226,0.2); border-radius:15px; padding:25px;}
+.cartao-mockup{
+  width:100%; height:220px; background:linear-gradient(135deg,#1a1230 0%, #0a0f1a 100%);
+  border-radius:12px; border:2px solid var(--primaria);
+  display:flex; flex-direction:column; justify-content:center; padding:25px;
+  box-shadow:0 15px 35px rgba(0,0,0,0.5);
+  position:relative; overflow:hidden;
+}
+.cartao-mockup::before{content:''; position:absolute; top:-50px; right:-50px; width:150px; height:150px; background:var(--primaria); opacity:0.15; border-radius:50%;}
+.grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:25px; margin-top:25px;}
+.paleta{display:flex; gap:10px; margin-top:15px}
+.cor{width:45px; height:45px; border-radius:50%; border:2px solid #fff}
+@media(max-width:850px){.hero{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html">← Voltar ao Portfólio</a>
+  <span>Amed Matsolo - Designer</span>
+</nav>
+
+<div class="hero">
+  <div>
+    <span class="tag">Canva</span><span class="tag">Design</span><span class="tag">Matola</span>
+    <h1 style="font-size:40px; margin:20px 0; color:#fff;">Cartão de Visita <br><span style="color:var(--primaria);">Profissional</span></h1>
+    <p>Design criado para uma empresa local de Matola que precisava passar mais profissionalismo. O cliente só tinha nome e número no WhatsApp, agora tem identidade.</p>
+    
+    <div style="margin:25px 0; display:flex; gap:15px;">
+      <div><h3 style="color:var(--secundaria);">12+</h3><p style="font-size:13px;">Cartões Criados</p></div>
+      <div><h3 style="color:var(--secundaria);">24h</h3><p style="font-size:13px;">Entrega</p></div>
+      <div><h3 style="color:var(--secundaria);">100%</h3><p style="font-size:13px;">Clientes Satisfeitos</p></div>
+    </div>
+
+    <a href="https://wa.me/258858651332?text=Olá Amed, quero um cartão de visita igual" class="btn">Quero Meu Cartão - 150MT</a>
+  </div>
+
+  <div style="display:flex; flex-direction:column; gap:20px;">
+    <!-- FRENTE DO CARTÃO -->
+    <div class="cartao-mockup">
+      <h2 style="color:var(--secundaria); font-size:22px;">A.M SERVICES</h2>
+      <p style="font-size:12px; letter-spacing:2px; opacity:0.7;">TECNOLOGIA & INFORMÁTICA</p>
+      <div style="margin-top:20px; width:40px; height:3px; background:var(--primaria);"></div>
+      <p style="margin-top:15px; font-size:13px;">💻 Criação de Sites | 🛠️ Manutenção</p>
+    </div>
+    <!-- VERSO DO CARTÃO -->
+    <div class="cartao-mockup" style="background:linear-gradient(135deg,#8a2be2 0%, #00a8ff 100%); color:white;">
+      <h3 style="font-size:18px;">Amed Matsolo</h3>
+      <p style="font-size:13px; margin-top:5px;">📞 85 865 1332<br>📍 Matola, Maputo<br>📧 amed.services@email.com</p>
+      <div style="margin-top:15px; background:white; color:#8a2be2; display:inline-block; padding:4px 10px; border-radius:5px; font-size:11px; font-weight:700;">WhatsApp</div>
+    </div>
+  </div>
+</div>
+
+<section>
+  <h2 style="color:var(--primaria);">O Desafio</h2>
+  <div class="card">
+    <p>Em Matola, muita empresa boa perde cliente porque não parece profissional. O dono entrega um papel escrito à mão. Criei este cartão para resolver 3 problemas:</p>
+    <ul style="margin:15px 0 0 20px;">
+      <li><b>Memorização:</b> Cliente guarda cartão, não perde número</li>
+      <li><b>Confiança:</b> Cartão bonito = empresa séria</li>
+      <li><b>Marketing:</b> Cliente mostra para outro</li>
+    </ul>
+  </div>
+
+  <h2 style="color:var(--primaria); margin-top:50px;">O que Entrego</h2>
+  <div class="grid">
+    <div class="card">🎨 <h3>Design Frente e Verso</h3><p>Arte moderna com tuas cores e logo.</p></div>
+    <div class="card">📱 <h3>Arquivo Digital + Print</h3><p>PDF pronto pra gráfica e imagem pra WhatsApp.</p></div>
+    <div class="card">🔄 <h3>3 Revisões Grátis</h3><p>Muda o que quiser até ficar perfeito.</p></div>
+  </div>
+
+  <div class="grid" style="margin-top:40px;">
+    <div class="card">
+      <h3>Paleta Usada</h3>
+      <p style="font-size:13px; opacity:0.8;">Inspirada no teu portfólio para manter identidade</p>
+      <div class="paleta">
+        <div class="cor" style="background:#0a0f1a" title="#0a0f1a"></div>
+        <div class="cor" style="background:#1a1230" title="#1a1230"></div>
+        <div class="cor" style="background:#8a2be2" title="#8a2be2"></div>
+        <div class="cor" style="background:#00a8ff" title="#00a8ff"></div>
+      </div>
+      <p style="margin-top:10px; font-size:12px;">#0a0f1a #1a1230 #8a2be2 #00a8ff</p>
+    </div>
+    <div class="card">
+      <h3>Ferramentas</h3>
+      <p>✅ Canva Pro<br>✅ Tipografia Poppins<br>✅ Ícones profissionais<br>✅ Export 300DPI (alta qualidade)</p>
+    </div>
+  </div>
+
+  <div style="text-align:center; margin-top:60px; background:var(--card); padding:40px; border-radius:15px; border:1px solid var(--primaria);">
+    <h2>Precisa de cartão igual?</h2>
+    <p style="margin:15px 0;">Faço em 24h por 150MT. Me manda teu nome e serviço no WhatsApp.</p>
+    <a href="https://wa.me/258858651332" class="btn" style="background:#25D366;">💬 Pedir no WhatsApp</a>
+  </div>
+</section>
+
+</body>
+</html>
